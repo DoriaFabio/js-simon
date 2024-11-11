@@ -1,5 +1,8 @@
 /* Generics */
+body {
 
+	background: radial-gradient(circle, rgba(35,32,255,1) 0%, rgba(5,188,186,1) 100%);
+}
 /* # COUNTDOWN */
 
 #countdown {
@@ -14,4 +17,51 @@
 
 input {
 	width: 80px !important;
+}
+
+.countRed {
+	animation: coloretesto 3s;
+}
+
+@keyframes coloretesto {
+	0% {
+		font-size: calc(1.375rem + 1.5vw); 
+		color: black;
+	}
+
+	15% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: red;
+		/* Ingrandisce il testo */
+	}
+
+	33% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: black;
+		/* Rimpicciolisce il testo */
+	}
+
+	49% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: red;
+		/* Ingrandisce il testo */
+	}
+
+	66% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: black;
+		/* Rimpicciolisce il testo */
+	}
+
+	82% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: red;
+		/* Ingrandisce il testo */
+	}
+
+	100% {
+		font-size: calc(1.375rem + 1.5vw);
+		color: black;
+		/* Rimpicciolisce il testo */
+	}
 }
