@@ -3,6 +3,7 @@ const countdown = document.getElementById("countdown");
 const formAnswer = document.getElementById("answers-form");
 const message = document.getElementById("message");
 const instruction = document.getElementById("instructions");
+const button = document.querySelector("button");
 let userNumber = [];
 let numberGuess = [];
 let elementiCom = [];
@@ -69,5 +70,7 @@ formAnswer.addEventListener("submit", function (event) {
     }
     console.log(message);
     message.innerHTML = "Hai indovinato " + counter + " numeri: " + elementiCom;
+    button.disabled = true;
 });
+
 

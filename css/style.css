@@ -26,7 +26,7 @@ input {
 @keyframes coloretesto {
 	0% {
 		font-size: calc(1.375rem + 1.5vw); 
-		color: black;
+		color: white;
 	}
 
 	15% {
@@ -37,7 +37,7 @@ input {
 
 	33% {
 		font-size: calc(1.375rem + 1.5vw);
-		color: black;
+		color: white;
 		/* Rimpicciolisce il testo */
 	}
 
@@ -49,7 +49,7 @@ input {
 
 	66% {
 		font-size: calc(1.375rem + 1.5vw);
-		color: black;
+		color: white;
 		/* Rimpicciolisce il testo */
 	}
 
@@ -61,7 +61,7 @@ input {
 
 	100% {
 		font-size: calc(1.375rem + 1.5vw);
-		color: black;
+		color: white;
 		/* Rimpicciolisce il testo */
 	}
 }
