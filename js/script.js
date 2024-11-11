@@ -12,6 +12,9 @@ const timer = setInterval(function () {
         countdown.innerHTML = seconds;
     } else {
         clearInterval(timer);
+        formAnswer.classList.remove("d-none");
+        ListaNumeri.remove();
+        countdown.remove();
     }
 }, 1000);
 
@@ -24,13 +27,15 @@ function appendLi() {
         numberGuess.push(newLi.textContent);
     }
 }
-
 appendLi();
 
+// input numeri
 function inputs() {
     const input = document.querySelectorAll("input");
     for (let i = 0; i < input.length; i++) {
         userNumber.push(input[i].value);
     }
 }
+
+
 
