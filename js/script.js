@@ -1,8 +1,9 @@
 const ListaNumeri = document.getElementById("numbers-list");
 const countdown = document.getElementById("countdown");
 const formAnswer = document.getElementById("answers-form");
+const message = document.getElementById("message");
 let userNumber = [];
-let randomNumber = [];
+let numberGuess = [];
 
 // countdown
 let seconds = 10;
@@ -17,9 +18,10 @@ const timer = setInterval(function () {
 // lista numeri
 function appendLi() {
     for(let i = 0; i < 5; i++) {
-        let numR = random(1, 100);
-        randomNumber.push(numR);  
-        console.log(randomNumber);
+        let newLi = document.createElement("li");
+        newLi.textContent = random(1, 100);
+        ListaNumeri.appendChild(newLi);
+        numberGuess.push(newLi.textContent);
     }
 }
 
