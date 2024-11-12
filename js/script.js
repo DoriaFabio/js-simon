@@ -8,21 +8,24 @@ let userNumber = [];
 let numberGuess = [];
 let elementiCom = [];
 
-
 // countdown
-let seconds = 10;
+let seconds = 5;
 const timer = setInterval(function () {
     if (seconds > 3) {
         countdown.innerHTML = seconds--;
     } else if (seconds <= 3 && seconds > 0) {
+        if(seconds == 3) {
+            countdown.classList.add("countRed");
+            countdown.classList.remove("text-white");
+            console.log(countdown);
+        }
         countdown.innerHTML = seconds--;
-        countdown.className = "countRed";
     } else {
         clearInterval(timer);
         formAnswer.classList.remove("d-none");
         ListaNumeri.remove();
         countdown.remove();
-        instruction.innerHTML = "Digita i numeri"
+        instruction.innerHTML = "Digita i numeri";
     }
 }, 1000);
 
@@ -46,8 +49,6 @@ function appendLi() {
 }
 
 appendLi();
-
-
 
 // input numeri
 function inputs() {
