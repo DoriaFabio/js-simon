@@ -28,21 +28,21 @@ const timer = setInterval(function () {
 
 // lista numeri
 function appendLi() {
-    for (let i = 0; i < 5; i++) {
-        let newLi = document.createElement("li");
-        newLi.textContent = random(1, 100);
-        ListaNumeri.appendChild(newLi);
-        numberGuess.push(newLi.textContent);
-    }
-    // let newLi = document.createElement("li");
-    // while(ListaNumeri.length < 5){
+    // for (let i = 0; i < 5; i++) {
+    //     let newLi = document.createElement("li");
     //     newLi.textContent = random(1, 100);
     //     ListaNumeri.appendChild(newLi);
-    //     if (!numberGuess.includes(newLi.textContent)) {
-    //         numberGuess.push(newLi.textContent);
-    //       }
+    //     numberGuess.push(newLi.textContent);
     // }
-    // return numberGuess;
+    while (numberGuess.length < 5) {
+        let newLi = document.createElement("li");
+        newLi.textContent = random(1, 100);
+        console.log(newLi.textContent);
+        if (!numberGuess.includes(newLi.textContent)) {
+            numberGuess.push(newLi.textContent);
+            ListaNumeri.appendChild(newLi);
+        }
+    }
 }
 
 appendLi();
